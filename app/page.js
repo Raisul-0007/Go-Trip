@@ -3,6 +3,11 @@ import Banner from './components/Banner'
 import Popular from './components/Popular'
 import Add from './components/Add'
 import Recommended from './components/Recommended'
+import Icons from './components/Icons'
+import Review from './components/Review'
+import Blog from './components/Blog'
+import Love from './components/Love'
+import Sletter from './components/Sletter'
 
 const Root = () => {
   return (
@@ -11,6 +16,11 @@ const Root = () => {
       <Popular/>
       <Add/>
       <Recommended/>
+      <Icons/>
+      <Review/>
+      <Blog/>
+      <Love/>
+      <Sletter/>
     </div>
   )
 }
