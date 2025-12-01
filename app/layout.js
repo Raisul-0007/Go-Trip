@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
 import Navber from "@/app/components/Navber";
+import Sletter from "./components/Sletter";
+import Footer  from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +27,8 @@ export default function RootLayout({ children }) {
       >
         <Navber/>
         {children}
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-
+        <Sletter/>
+        <Footer/>
       </body>
     </html>
   );

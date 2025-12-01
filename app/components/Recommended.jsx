@@ -8,11 +8,13 @@ const Recommended = () => {
      let [show, setShow] = useState(false)
     useEffect(() => {
         document.addEventListener("click", (e) => {
-        if(cateRef.current.contains(e.target)===true){
-            setShow(!show)
-        }else{
-            setShow(show)
-        }})
+            if (!cateRef.current) return;            
+            if (cateRef.current.contains(e.target)) {
+                setShow((prev) => !prev);
+            } else {
+                setShow(false);
+            }
+        })
     }, [])
   return (
     <div>

@@ -20,7 +20,6 @@ const Root = () => {
       <Review/>
       <Blog/>
       <Love/>
-      <Sletter/>
     </div>
   )
 }
