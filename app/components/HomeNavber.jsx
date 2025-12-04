@@ -5,8 +5,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IoMdArrowDropdown } from "react-icons/io";
 const Navber = () => {
+  const [scroll,setScroll] = useState(false)
+  useEffect(()=>{
+    const handleScroll =()=>{
+      setScroll(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[])
   return (
-    <div className="flex justify-between py-5 bg-[#051036] fixed w-full top-0 left-0 z-1000">
+    <div className={`flex justify-between py-5 transition-all ease-in-out duration-300 fixed w-full top-0 left-0 z-1000 ${scroll? 'bg-[#051036] shadow-md py-3' : 'bg-transparent'}`}>
         <div className="flex gap-5 items-center">
         <div className="">
             <Image src={Logo} alt="logo" />

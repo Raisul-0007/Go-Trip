@@ -36,8 +36,8 @@ const Sletter = () => {
             </div>
         </div>
         <div className="flex gap-3 w-1/2 justify-center">
-            <input className='text-sm py-4 pr-50 rounded-lg' type="text" placeholder='Your Email'/>
-            <Button className="px-9 py-6.5 bg-[#3554D1] rounded-lg text-white">Subscribe</Button>
+            <input className='text-sm py-4 pr-50 rounded-lg bg-white pl-5' type="text" placeholder='Your Email'/>
+            <Button className="px-9 py-6.5 bg-[#3554D1] rounded-lg text-white cursor-pointer">Subscribe</Button>
         </div>
       </Container>
     </div>
